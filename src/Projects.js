@@ -38,7 +38,7 @@ class Projects extends Component {
             },
             {
                 name : "Door sensor",
-                about : "This is a Raspberry PI project that detects movement around the main, it captures images and sends via Telegram.",
+                about : "This is a Raspberry PI project that detects movement around the main door, it captures images and sends via Telegram.",
                 link : "https://github.com/WaryaWaxbaro/DoorBell",
                 linkText : "Source code"
             }

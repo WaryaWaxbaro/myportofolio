@@ -10,14 +10,18 @@
 
     &__card {
         background-color: $color-grey-dark-1;
-        height: 25rem;
+        height: 30rem;
         border-radius: .5rem;
         position: relative;
         backface-visibility: hidden;
         transition: all .2s;
 
-        @media screen and (max-width: $bp-700) {
-            height: 20rem;
+        @media screen and (max-width: $bp-900) {
+            height: 25rem;
+        }
+
+        @media screen and (max-width: $bp-800) {
+            height: 22rem;
         }
 
 
@@ -35,6 +39,7 @@
 
             @media screen and (max-width: $bp-700) {
                 font-size: 1.8rem;
+                margin: 1rem 0;
             }
 
             @media screen and (max-width: $bp-650) {
@@ -49,17 +54,18 @@
         &--summary {
             backface-visibility: hidden;
             padding: 0 1.5rem;
-            font-size: $default-font;
+            font-size: 1.4rem;
             color: $color-secondary;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
+            line-height: 1.6;
 
-            @media screen and (max-width: $bp-700) {
-                font-size: 1.4rem;
+            @media screen and (max-width: $bp-800) {
+                font-size: 1.2rem;
                 margin-bottom: 1rem;
             }
 
             @media screen and (max-width: $bp-600) {
-                font-size: 1.2rem;
+                font-size: 1rem;
             }
         }
 
