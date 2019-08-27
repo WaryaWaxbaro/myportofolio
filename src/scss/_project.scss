@@ -51,6 +51,7 @@
             padding: 0 1.5rem;
             font-size: $default-font;
             color: $color-secondary;
+            letter-spacing: 1px;
 
             @media screen and (max-width: $bp-700) {
                 font-size: 1.4rem;
