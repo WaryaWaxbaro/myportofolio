@@ -1,0 +1,114 @@
+@import './base';
+.projects {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    margin: 3rem;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 3rem;
+
+    &__card {
+        background-color: $color-grey-dark-1;
+        height: 25rem;
+        border-radius: .5rem;
+        position: relative;
+        backface-visibility: hidden;
+        transition: all .2s;
+
+        @media screen and (max-width: $bp-700) {
+            height: 20rem;
+        }
+
+
+        @media screen and (max-width: $bp-650) {
+            height: 12rem;
+        }
+
+        &--heading {
+            backface-visibility: hidden;
+            text-align: center;
+            margin: 2rem 0;
+            letter-spacing: 2px;
+            font-size: 2rem;
+            color: $color-primary-dark;
+
+            @media screen and (max-width: $bp-700) {
+                font-size: 1.8rem;
+            }
+
+            @media screen and (max-width: $bp-650) {
+                margin: .5rem 0;
+            }
+
+            @media screen and (max-width: $bp-600) {
+                font-size: 1.6rem;
+            }
+        }
+
+        &--summary {
+            backface-visibility: hidden;
+            padding: 0 1.5rem;
+            font-size: $default-font;
+            color: $color-secondary;
+
+            @media screen and (max-width: $bp-700) {
+                font-size: 1.4rem;
+                margin-bottom: 1rem;
+            }
+
+            @media screen and (max-width: $bp-600) {
+                font-size: 1.2rem;
+            }
+        }
+
+        &--btn {
+            transition: all .4s;
+
+            &:link,
+            &:visited {
+                text-decoration: none;
+                position: absolute;
+                bottom: 1rem;
+                right: 1rem;
+                display: block;
+                padding: 1rem;
+                text-transform: uppercase;
+                border-bottom: 2px solid #b07947;
+                font-size: 1.4rem;
+                color: #b07947;
+                font-weight: 400;
+
+                display: flex;
+                align-items: center;
+
+                @media screen and (max-width: $bp-700) {
+                    font-size: 1.2rem;
+                }
+            }
+
+            &:active {
+                transform: translateY(2px);
+            }
+
+            &:hover {
+                background-color: $color-primary-light;
+                color: #fff;
+                border-bottom: 2px solid transparent;
+            }
+
+            &-icon {
+                height: 1.75rem;
+                width: 1.75rem;
+                margin-left: 1rem;
+                fill: currentColor;
+            }
+        }
+
+        &:hover {
+            -ms-transform: scale(1.02) translateZ(0); /* IE 9 */
+            -webkit-transform: scale(1.02) translateZ(0); /* Chrome, Safari, Opera */
+            transform: scale(1.02) translateZ(0);
+        }
+    }
+}
