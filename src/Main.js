@@ -13,11 +13,9 @@ class Main extends Component {
     }
 
     click(e){
-        this.getViewName(e.target.id);
-    }
-
-    getViewName(view){
-        this.setState({currentView: view});
+        e.stopPropagation();
+        this.setState({currentView: e.target.id});
+        console.log(e.target.id);
     }
 
     render(){

@@ -9,13 +9,13 @@ class SideBarItem extends Component {
     render(){
         let name = this.props.name;
         return(
-            <div className="nav__link" >
-                {name === 'home' ? <HomeIcon /> : 
-                name === 'projects' ? <CodeIcon /> :
-                name === 'skills' ? <ToolsIcon/> :
-                name === 'contact' ? <LandlineIcon/> : 
+            <div id={this.props.id} className="nav__link" >
+                {name === 'home' ? <HomeIcon id={this.props.id} /> : 
+                name === 'projects' ? <CodeIcon id={this.props.id} /> :
+                name === 'skills' ? <ToolsIcon id={this.props.id}/> :
+                name === 'contact' ? <LandlineIcon id={this.props.id}/> : 
                 ""}
-                <div className="nav__btn">{name}</div>
+                <div id={this.props.id} className="nav__btn">{name}</div>
             </div>
         )
     }
