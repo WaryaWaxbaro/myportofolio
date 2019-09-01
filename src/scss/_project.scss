@@ -30,7 +30,7 @@
 
 
         @media screen and (max-width: $bp-500) {
-            height: 14rem;
+            height: 16rem;
         }
 
         &--heading {
@@ -68,9 +68,9 @@
                 margin-bottom: 1rem;
             }
 
-            @media screen and (max-width: $bp-600) {
+            /*  @media screen and (max-width: $bp-600) {
                 font-size: 1rem;
-            }
+            }  */
         }
 
         &--btn {
