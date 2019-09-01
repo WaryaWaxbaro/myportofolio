@@ -30,12 +30,11 @@
             }
 
             @media screen and (max-width: $bp-580) {
-                //margin-right: 5rem;
-                margin-bottom: 1rem;
+                //margin-bottom: 1rem;
             }
 
             @media screen and (max-width: $bp-500) {
-                margin-bottom: 1rem;
+                //margin-bottom: 1rem;
                 padding: .5rem 0;
             }
 
@@ -129,18 +128,20 @@
 
 .hide {
     @media screen and (max-width: $bp-700) {
-        //width: 0;
+        width: 0;
         visibility: hidden;
         opacity: 0;
+        z-index: -1;
     }
 }
 
 .show {
     @media screen and (max-width: $bp-700) {
         visibility: visible;
+        opacity: 1;
         grid-column: 1 / span 2;
-        z-index: 100;
-        transition: all .5s;
+        z-index: 2;
+        transition: all .2s;
     }
 
     @media screen and (max-width: $bp-580) {
