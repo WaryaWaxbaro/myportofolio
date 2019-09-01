@@ -10,8 +10,10 @@ class SideBar extends Component {
 
     render(){
         let active = this.props.current;
+        let collapseMenu;
+        !this.props.showHide ? collapseMenu = "nav show" : collapseMenu = "nav hide";
         return(
-            <nav className="nav">
+            <nav className={`${collapseMenu}`}>
                 <ul className="nav__list">
                     {this.props.listName.map((li, i) => (
                         active === li ? 

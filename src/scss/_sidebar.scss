@@ -29,6 +29,15 @@
                 margin: 1rem 0;
             }
 
+            @media screen and (max-width: $bp-580) {
+                margin-right: 5rem;
+            }
+
+            @media screen and (max-width: $bp-500) {
+                margin-bottom: 1rem;
+                padding: .5rem 1rem;
+            }
+
             &:first-child {
                 margin-top: 2rem;
             }
@@ -66,6 +75,7 @@
     &__link {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         padding: 0 3rem;
         margin: 0 auto;
 
@@ -97,17 +107,42 @@
             padding: 1rem 1rem;
         }
 
+        @media screen and (max-width: $bp-500) {
+            padding: 0;
+        }
+
     }
 
     &__icon {
         height: 1.75rem;
         width: 1.75rem;
-        //margin-right: 2.5rem;
+        margin-right: 1rem;
         fill: $color-primary-dark;
         z-index: 2;
 
         @media screen and (max-width: $bp-700) {
             //margin-right: 1.5rem;
         }
+    }
+}
+
+.hide {
+    @media screen and (max-width: $bp-700) {
+        //width: 0;
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+.show {
+    @media screen and (max-width: $bp-700) {
+        visibility: visible;
+        grid-column: 1 / span 2;
+        z-index: 100;
+        transition: all .5s;
+    }
+
+    @media screen and (max-width: $bp-580) {
+        grid-column: 1 / span 3;
     }
 }

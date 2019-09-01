@@ -5,10 +5,12 @@ import image from './img/profile.png';
 class ProfileFile extends Component {
     render(){
         return(
-            <figure className="about--image">
+            <div className="about__img-container">
+                <figure className="about--image">
                 <img src={image} alt="Profile pic" />
                 <figcaption>Abdishakur Hassan</figcaption>
-            </figure>
+                </figure>
+            </div>
         )
     }
 }

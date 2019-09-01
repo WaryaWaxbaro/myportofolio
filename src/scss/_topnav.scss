@@ -1,0 +1,74 @@
+@import './base';
+.TopNavContainer {
+    visibility: hidden;
+    opacity: 0;
+    //background-color: red;
+    grid-column: 1 / -1;
+    grid-row: 1 / span 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media screen and (max-width: $bp-700) {
+        visibility: visible;
+        opacity: 1;
+        background-color: white;
+    }
+}
+
+.NavButton {
+    width: 3.5rem;
+    background-color: $color-primary-dark;
+    height: .3rem;
+    margin-left: 3rem;
+    transition: all .2s;
+    position: relative;
+    backface-visibility: hidden;
+
+    &:hover  {
+        transform: scaleY(1.1);
+        cursor: pointer;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        background-color: $color-primary-dark;
+        left: 0;
+        top: -8px;
+        height: .3rem;
+        width: 3.5rem;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        background-color: $color-primary-dark;
+        left: 0;
+        top: .8rem;
+        height: .3rem;
+        width: 3.5rem;
+    }
+}
+
+.visible {
+    background-color: transparent;
+    transition: all .1s;
+
+    &::before{
+        transition: all .2s;
+        width: 3rem;
+        top: 0;
+        transform: rotate(135deg);
+    }
+
+    &::after {
+        transition: all .2s;
+        width: 3rem;
+        top: 0;
+        transform: rotate(-135deg);
+    }
+}

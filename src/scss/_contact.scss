@@ -1,13 +1,15 @@
 @import './base';
 .contact {
-    grid-row: 2 / span 4;
-    grid-column: 2 / span 4;
+    grid-row: 1 / span 4;
+    grid-column: 1 / span 4;
+    margin: 2rem 3rem;
 
     @media screen and (max-width: $bp-600) {
         grid-row: 1 / -1;
         grid-column: 1 / -1;
 
-        padding: 3rem;
+        //padding: 3rem;
+        margin: 2rem 3rem;
     }
 
     &__detail {

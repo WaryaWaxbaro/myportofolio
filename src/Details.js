@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Home from './Home';
-import ProfileFile from './ProfileFile';
 import Projects from './Projects';
 import Skills from './Skills';
 import Contact from './Contact';
@@ -10,9 +9,6 @@ class Details extends Component {
     changeView(x){
         if(x === 'home'){
             return <Home />;
-        }
-        if(x === 'home'){
-            return <ProfileFile />;
         }
         if(x === 'projects'){
             return <Projects /> ;
