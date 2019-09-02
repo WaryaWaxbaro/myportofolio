@@ -6,8 +6,17 @@
     color: white;
 
     display: flex;
-    flex-direction: column;
+    //flex-direction: column;
     justify-content: center;
     align-items: center;
     letter-spacing: 2px;
+}
+
+.FooterLink:link,
+.FooterLink:visited
+ {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    margin: 0 .6rem;
 }
