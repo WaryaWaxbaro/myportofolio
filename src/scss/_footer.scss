@@ -10,6 +10,10 @@
     justify-content: center;
     align-items: center;
     letter-spacing: 2px;
+
+    @media screen and (max-width: $bp-700) {
+        font-size: 1.2rem;
+    }
 }
 
 .FooterLink:link,
