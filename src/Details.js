@@ -7,18 +7,8 @@ import './scss/_base.scss';
 
 class Details extends Component {
     changeView(x){
-        if(x === 'home'){
-            return <Home />;
-        }
-        if(x === 'projects'){
-            return <Projects /> ;
-        }
-        if(x === 'skills'){
-            return <Skills /> ;
-        }
-        if(x === 'contact'){
-            return <Contact />;
-        }
+        return x === 'about' ? <Home /> : x === 'projects' ? <Projects /> 
+        : x === 'skills' ? <Skills /> : x === 'contact' ? <Contact /> : null;
     }
     render(){
         let v = this.props.view;

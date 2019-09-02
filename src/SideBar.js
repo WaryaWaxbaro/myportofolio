@@ -5,7 +5,7 @@ import './scss/_sidebar.scss';
 class SideBar extends Component {
 
     static defaultProps = {
-        listName : ['home', 'projects', 'skills', 'contact']
+        listName : ['about', 'projects', 'skills', 'contact']
     }
 
     render(){

@@ -33,6 +33,7 @@
         line-height: 1.6;
         letter-spacing: 1.2px;
         font-size: $default-font;
+        text-align: justify;
 
         @media screen and (max-width: $bp-700) {
             letter-spacing: 1px;
@@ -76,7 +77,7 @@
             transform: translate(-50%, -50%);
             text-align: center;
             font-weight: bold;
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             font-style: italic;
             color: #fff;
             transition: all .5s;

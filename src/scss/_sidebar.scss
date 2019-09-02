@@ -79,6 +79,10 @@
         padding: 0 3rem;
         margin: 0 auto;
 
+        @media screen and (max-width: $bp-800) {
+            padding: 0 2rem;
+        }
+
         @media screen and (max-width: $bp-700) {
             padding: 0 1.5rem;
         }

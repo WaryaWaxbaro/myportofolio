@@ -7,11 +7,8 @@ class Home extends Component {
         return(
             <div className="Home">
                 <div className="about">
-                    <h1 className="about--heading">
-                        About me
-                    </h1>
                     <p className="about--paragraph">
-                        I am a 4th-year Software Development student at Oulu University of Applied Sciences. I am a social and open person who values teamwork, cooperation and enjoys sharing a cup of coffee while talking about the big upcoming project. During my free time, I like watching football and keeping fit. 
+                    I am a 4th-year Software Development student at Oulu University of Applied Sciences. During my studies, I did many personal as well as team projects with different programming languages for different platforms, it's fun learning new things every day. I am an open person who values teamwork, cooperation and enjoys sharing a cup of coffee while talking about the big upcoming project. During my free time, I like watching football and keeping fit.
                     </p>
                 </div>
                 <ProfileFile />

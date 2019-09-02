@@ -10,7 +10,7 @@ class SideBarItem extends Component {
         let name = this.props.name;
         return(
             <div id={this.props.id} className="nav__link" >
-                {name === 'home' ? <HomeIcon id={this.props.id} /> : 
+                {name === 'about' ? <HomeIcon id={this.props.id} /> : 
                 name === 'projects' ? <CodeIcon id={this.props.id} /> :
                 name === 'skills' ? <ToolsIcon id={this.props.id}/> :
                 name === 'contact' ? <LandlineIcon id={this.props.id}/> : 

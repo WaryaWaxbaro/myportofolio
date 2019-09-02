@@ -14,10 +14,7 @@ class Skills extends Component {
                         Web development
                     </h2>
                     <p className="skills__content--item-paragraph">
-                        My web development projects I used one or more of the following 
-                        <span>Vanilla JavaScript</span>, <span>Nodejs</span>, <span>Expressjs</span>, 
-                        <span>Passportjs</span>, <span>React</span>, <span>Bootstrap</span>, <span>HTML</span>, <span>CSS</span>, 
-                        <span>SASS</span>, <span>JSON</span> and <span>MongoDB</span>.
+                        My web development projects I used one or more of the following <span>Vanilla JavaScript</span>, <span>Nodejs</span>, <span>Expressjs</span>, <span>Passportjs</span>, <span>React</span>, <span>Bootstrap</span>, <span>HTML</span>, <span>CSS</span>, <span>SASS</span>, <span>JSON</span> and <span>MongoDB</span>.
                     </p>
                 </div>
                 <div className="skills__content--item">

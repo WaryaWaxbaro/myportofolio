@@ -10,7 +10,7 @@ class Main extends Component {
     constructor(props){
         super(props);
         this.state = {
-            currentView : "home",
+            currentView : "about",
             isClicked: true
         }
         this.click = this.click.bind(this);
